@@ -9,27 +9,28 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
          <!-- CSS personalizado -->
         <link href="css/estilo.css" rel="stylesheet" media="screen">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"><!-- Pegar a fonte no googlefont-->
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".menu-navegacao" data-offset="80">
 		
 
 		<!-- Menu da Aplicação -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navegacao">
+					<a class="navbar-brand" href="#page-top">Curso</a>
+					<button type="" class="navbar-toggle" data-toggle="collapse" data-target="#menu-navegacao">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#page-top">Curso</a>
 				</div>
 
-				<div class="collapse navbar-collapse" id="menu-navegacao"><!--id será o target do button acima acima -->
+				<div class="collapse navbar-collapse menu-navegacao" id="menu-navegacao"><!--id será o target do button acima acima -->
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#page-top">Início</a></li>
 						<li><a href="#servicos">Serviços</a></li>
-						<li><a href="#portfolio">Portifólio</a></li>
+						<li><a href="#portfolio">Portfólio</a></li>
 						<li><a href="#quemsomos">Quem somos</a></li>
 						<li><a href="#localizacao">Localização</a></li>
 						<li><a href="#contato">Contato</a></li>
@@ -41,29 +42,113 @@
 		
 
 		<!-- Slider da Aplicação -->
+		<div class="divslider">
+			<div class="container">
+				<div class="col-xs-12">
+					<div id="sliderPrincipal" class="carousel slide" data-ride="carousel">
+
+						<ol class="carousel-indicators">
+							<li data-target="#sliderPrincipal" data-slide-to="0" class="active"></li>
+							<li data-target="#sliderPrincipal" data-slide-to="1"></li>
+							<li data-target="#sliderPrincipal" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img style="margin:auto" src="img/slider/slider1.jpg" alt="Imagem Slider 1">
+							</div>
+							<div class="item">
+								<img style="margin:auto" src="img/slider/slider2.jpg" alt="Imagem Slider 2">
+							</div>
+							<div class="item">
+								<img style="margin:auto" src="img/slider/slider3.jpg" alt="Imagem Slider 3">
+							</div>
+						</div>
+
+						<a class="left carousel-control" href="#sliderPrincipal" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+
+						<a class="right carousel-control" href="#sliderPrincipal" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
 		<!-- // Fim Slider da Aplicação -->
 
 
 		<!-- Serviços -->
+		<section id="servicos">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Serviços <small>Conheça o que fazemos</small></h1>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- // Fim Serviços -->
 
 
 		<!-- Portfólio -->
+		<section id="portfolio" class="div_colorida">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Portfolio <small>Conheça nosso trabalho</small></h1>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- // Fim Portifólio -->
 
 
 		<!-- Quem somos -->
+		<section id="quemsomos">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Quem somos <small>Conheça nossa história</small></h1>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!-- // Fim Quem Somos -->
 
 
 		<!-- Localização -->
+		<section id="localizacao" class="div_colorida">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Localização <small>Veja onde estamos</small></h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- // Fim Localização -->
 
 		<!-- Contato -->
+		<section id="contato">
+			<div class="container">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Contato <small>Fale conosco</small></h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- // Fim Contato -->
 
 
 		<!-- Rodapé -->
+		<footer>
+			Rodapé da Página
+		</footer>
 		<!-- // Fim do Rodapé -->
         
         <script src="js/jquery-3.2.0.min.js"></script>

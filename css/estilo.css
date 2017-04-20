@@ -1,13 +1,26 @@
+*{
+	font-family: 'Lato', sans-serif;
+	font-size: 300;
+}
+
 body{
-	padding-top: 60px;
-	padding-bottom: 70px;
+	padding-top: 50px;
 }
 
-.linhaPersonalizada{
-    background	: gray;
+section{
+	padding-top: 25px;
+	padding-bottom: 15px;
+	min-height: 100vh;
 }
 
-.bg-color-padding p{
-	padding: 15px;
+.divslider{
+	padding-top: 35px;
+	padding-bottom: 15px;
+	background-repeat: no-repeat;
 }
 
+.div_colorida{
+	background: url(../img/tema.jpg);
+	width: 100%;
+	height: 100%;
+}
