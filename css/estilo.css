@@ -24,3 +24,17 @@ section{
 	width: 100%;
 	height: 100%;
 }
+
+.servicos_item *{
+	text-align: center;
+}
+
+.servicos_item h4{
+	margin-top: 40px;
+	font-size: 25px;
+}
+
+.servicos__btn_todososservicos{
+	margin-top: 25px;
+}
+
