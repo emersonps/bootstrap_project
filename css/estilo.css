@@ -13,8 +13,21 @@ section{
 	min-height: 100vh;
 }
 
+section#contato{
+	min-height: auto
+}
+section#localizacao{
+	min-height: auto
+}
+
+footer{
+	padding-top: 30px;
+	padding-bottom: 10px;
+	background: url(../img/tema.jpg);
+}
+
+
 .divslider{
-	padding-top: 35px;
 	padding-bottom: 15px;
 	background-repeat: no-repeat;
 }
@@ -34,7 +47,36 @@ section{
 	font-size: 25px;
 }
 
+img.grayscale {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+img.grayscale:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+
 .servicos__btn_todososservicos{
 	margin-top: 25px;
 }
 
+.portfolio_item{
+	background: white;
+}
+
+.portfolio_item h4{
+	text-align: center;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contato textarea{
+	height: 170px;
+}
+.contato .aviso{
+	height: 15px;
+}
