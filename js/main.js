@@ -1,5 +1,5 @@
 //Script para suaviação de rolagem da página
-$(document).on('click', 'a[href^="#"]', function(e) { 
+$(document).on('click', '#menu-navegacao a', function(e) { 
 // target element id 
 var id = $(this).attr('href'); 
 

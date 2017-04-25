@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- define a viewport-->
+        <title>Quem somos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+         <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+        <link href="css/painel.css" rel="stylesheet" media="screen">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"><!-- Pegar a fonte no googlefont-->	
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		     	<a class="navbar-brand" href="#">Login</a>
+		    </div>
+		  </div>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					
+					<div class="form-login">
+						<h2>Efetue login</h2>
+						<form>
+							<label class="sr-only" for="inputEmail">E-mail:</label> <!-- para não aparecer na tela, leitura somnente de tela -->
+							<input type="email" id="inputEmail" name="inputEmail" class="form-control input-lg" placeholder="Seu E-mail" required>
+							
+							<label class="sr-only" for="inputEmail">Senha:</label> <!-- para não aparecer na tela, leitura somnente de tela -->
+							<input type="password" id="inputPass" name="inputPass" class="form-control input-lg" placeholder="Sua senha" required>
+							
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="s">Lembre-me</input>
+								</label>
+							</div>
+
+							<button type="submit" class="btn btn-primary btn-lg pull-right btn-block">
+								<i class="fa fa-check"></i> Acessar
+							</button>
+
+
+							<br clear="both">
+						</form>
+					</div>
+
+				</div>
+			</div>	
+		</div>
+
+        
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+	</body>
+</html>
