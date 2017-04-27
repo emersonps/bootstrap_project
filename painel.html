@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!-- adicionar CSS Bootstrap localmente -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap.darklay.min.css" rel="stylesheet" media="screen">
          <!-- CSS personalizado -->
         <link href="css/estilo.css" rel="stylesheet" media="screen">
         <link href="css/painel.css" rel="stylesheet" media="screen">
@@ -28,9 +28,10 @@
 
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"><i class="fa fa-home fa-2x"></i></a></li>
 		        <li><a href="#"><i class="fa fa-area-chart fa-2x"></i></a></li>
 		        <li><a href="#"><i class="fa fa-birthday-cake fa-2x"></i></a></li>
-		        <li><a href="#"><i class="fa fa-home fa-2x"></i></a></li>
+
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x"></i><span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -48,10 +49,104 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-3">
-					coluna 1
+					<!-- Painel Esquerdo -->
+					<div  class="panel panel-success">
+						<div id="colGroup1" role="tab" class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#colListGroup1" aria-controls="colListGroup1" aria-expanded="true" data-toggle="collapse"><!-- pegar o id que será controlado por esse atributo: Id listGroup1 do role=tbpanel abaixo-->
+									<i class="fa fa-file"></i> Gerenciar Posts
+								</a>
+							</h4>
+						</div>
+						<div role="tabpanel" class="panel-collapse collapse" id="colListGroup1" aria-expanded="true">
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Criar Post</a></li>
+								<li class="list-group-item"><a href="#">Alterar Post</a></li>
+								<li class="list-group-item"><a href="#">Excluir Post</a></li>					
+							</ul>
+							<div class="panel-footer"></div>
+						</div>
+					</div>
+
+					<div  class="panel panel-primary">
+						<div id="colGroup2" role="tab" class="panel-heading">
+							<h4 class="panel-title">
+								<a href="#colListGroup2" aria-controls="colListGroup2" aria-expanded="true" data-toggle="collapse"><!-- pegar o id que será controlado por esse atributo: Id listGroup1 do role=tbpanel abaixo-->
+									<i class="fa fa-user-o"></i> Gerenciar Usuário
+								</a>
+							</h4>
+						</div>
+						<div role="tabpanel" class="panel-collapse collapse" id="colListGroup2" aria-expanded="true">
+							<ul class="list-group">
+								<li class="list-group-item"><a href="#">Criar Usuário</a></li>
+								<li class="list-group-item"><a href="#">Alterar Usuário</a></li>
+								<li class="list-group-item"><a href="#">Excluir Usuário</a></li>					
+							</ul>
+							<div class="panel-footer"></div>
+						</div>
+					</div>		
+					<!-- Painel Esquerdo -->
 				</div>
-				<div class="col-md-9 text-right">
-					coluna 2
+
+
+				<div class="col-md-9">
+					<div class="conteudo_painel">
+						<div class="conteudo_painel_int">
+							
+							<ul class="nav nav-pills" role"tablist">
+								<li class="active"><a href="#">E-mails <span class="badge">10</span></a></li>
+								<li class=""><a href="#">Avisos <span class="badge">8</span></a></li>
+								<li class=""><a href="#">Mensagens <span class="badge">5</span></a></li>
+								<li class=""><a href="#">Aniversariantes <span class="badge">5</span></a></li>
+
+							</ul>
+							<hr>
+							<div class="well well-sm">
+								<h2>Seja bem vindo Usuário!</h2>
+								<p>Utilize o menu ao lado para acessar as áreas do painel.</p>
+							</div>
+
+							<div class="pageheader"><h3>Avisos:</h3></div>
+							<div class="alert alert-success">
+								<strong>Parabéns, você foi recomendado!</strong>
+							</div>
+							<div class="alert alert-warning">
+								<strong>Atenção!</strong> Você tem até o dia 01/01/2017 para ajustar suas férias.
+							</div>
+
+							<div class="row">
+								<div class="col-sm-4">
+									<h3>Minhas Tarefas</h3>
+									<ul>
+										<li>Ligar para fulano</li>
+										<li>Retornar E-mail fulano</li>
+										<li>Outra tarefa</li>
+									</ul>
+									<a href="#" class="btn btn-primary btn-block">Adicionar nova tarefa</a>
+
+								</div>
+								<div class="col-sm-4">
+									<h3>Minhas Tarefas</h3>
+									<ul>
+										<li>Ligar para fulano</li>
+										<li>Retornar E-mail fulano</li>
+										<li>Outra tarefa</li>
+									</ul>
+									<a href="#" class="btn btn-primary btn-block">Adicionar nova tarefa</a>
+
+								</div>
+								<div class="col-sm-4">
+									<h3>Minhas Tarefas</h3>
+									<ul>
+										<li>Ligar para fulano</li>
+										<li>Retornar E-mail fulano</li>
+										<li>Outra tarefa</li>
+									</ul>
+									<a href="#" class="btn btn-primary btn-block">Adicionar nova tarefa</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>

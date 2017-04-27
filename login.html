@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <!-- adicionar CSS Bootstrap localmente -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap.solar.min.css" rel="stylesheet" media="screen">
          <!-- CSS personalizado -->
         <link href="css/estilo.css" rel="stylesheet" media="screen">
         <link href="css/painel.css" rel="stylesheet" media="screen">
@@ -17,6 +17,7 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
+		     	<a class="navbar-brand" href="index.html"><i class="fa fa-home"></i></a>
 		     	<a class="navbar-brand" href="#">Login</a>
 		    </div>
 		  </div>
@@ -25,15 +26,15 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-12">
-					
 					<div class="form-login">
 						<h2>Efetue login</h2>
+						
 						<form>
 							<label class="sr-only" for="inputEmail">E-mail:</label> <!-- para não aparecer na tela, leitura somnente de tela -->
-							<input type="email" id="inputEmail" name="inputEmail" class="form-control input-lg" placeholder="Seu E-mail" required>
+							<input type="email" id="inputEmail" name="inputEmail" class="form-control input-lg" maxlength="50" placeholder="Seu E-mail" required>
 							
 							<label class="sr-only" for="inputEmail">Senha:</label> <!-- para não aparecer na tela, leitura somnente de tela -->
-							<input type="password" id="inputPass" name="inputPass" class="form-control input-lg" placeholder="Sua senha" required>
+							<input type="password" id="inputPass" name="inputPass" class="form-control input-lg" maxlength="15" placeholder="Sua senha" required>
 							
 							<div class="checkbox">
 								<label>
@@ -57,6 +58,7 @@
         
         <script src="js/jquery-3.2.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-maxlength.js"></script> 
         <script src="js/main.js"></script> 
 	</body>
 </html>
